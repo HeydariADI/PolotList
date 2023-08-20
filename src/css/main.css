@@ -1,8 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  box-sizing: border-box;
+  font: 400 14px "Poppins";
+}
 @layer components {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 400 15px "Poppins";
+  }
   .container {
     @apply mx-auto p-2 sm:p-0;
   }
@@ -27,7 +36,7 @@
   }
 
   .navbar-menu button {
-    @apply flex items-center justify-center gap-2 bg-slate-400 hover:bg-slate-400 transition-colors duration-150 hover:text-white px-5 py-2 rounded-lg;
+    @apply flex items-center justify-center gap-2 bg-slate-400 hover:bg-slate-400 transition-colors duration-150 hover:text-white px-5 py-3 rounded-lg;
   }
   .navbar.dark button {
     @apply text-gray-800 bg-white;
@@ -47,5 +56,25 @@
 
   main {
     @apply min-h-[450vh];
+  }
+
+  /* Subhero */
+  .subhero ul {
+    @apply rounded-b-lg overflow-hidden grid grid-cols-5;
+  }
+  .subhero ul button {
+    @apply bg-primary-normal flex items-center justify-center lg:justify-start gap-5 w-full px-5 py-9;
+  }
+
+  .subhero ul button.active {
+    @apply bg-primary-focus;
+  }
+
+  .subhero ul button img {
+    @apply bg-white w-12 h-12 md:h-14 md:w-14 rounded-full object-scale-down;
+  }
+
+  .subhero ul button span {
+    @apply text-white tracking-wider capitalize hidden lg:inline-block;
   }
 }
