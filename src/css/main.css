@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    html{
+        @apply m-2
+    }
+    li[class='nav__list']{
+        @apply mx-9;
+    }
+}

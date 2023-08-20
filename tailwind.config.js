@@ -2,10 +2,15 @@
 module.exports = {
   content: ["./public/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'primary-bg':'#212529',
+        'primary-text':'#8d99af'
+      }
+    },
   },
   plugins: [
-    
+
   ],
 };
 
