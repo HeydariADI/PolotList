@@ -523,6 +523,7 @@ video {
     margin: 0;
     box-sizing: border-box;
     font: 400 15px "Poppins";
+    color: #333333;
   }
 .container {
   margin-left: auto;
@@ -553,7 +554,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
-.navbar.dark {
+.navbar.dark a {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -571,7 +572,8 @@ header {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
-.navbar-menu button {
+.category-check-listing-btn,
+  .navbar-add-listing-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -583,21 +585,43 @@ header {
   padding-right: 1.25rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  letter-spacing: 0.1em;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.navbar-menu button:hover {
+.category-check-listing-btn:hover,
+  .navbar-add-listing-btn:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.navbar.dark button {
+.category-check-listing-btn svg,
+  .navbar-add-listing-btn svg {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+}
+.category-check-listing-btn svg path,
+  .navbar-add-listing-btn svg path {
+  --tw-text-opacity: 1;
+  color: rgb(141 153 175 / var(--tw-text-opacity));
+}
+.navbar.dark .navbar-add-listing-btn {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+.navbar.dark .navbar-add-listing-btn svg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(141 153 175 / var(--tw-bg-opacity));
+}
+.navbar.dark .navbar-add-listing-btn path {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .hero {
   background-image: url('/assets/images/heading-bg.jpg');
@@ -611,8 +635,6 @@ header {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .hero-inner strong {
   font-size: 0.875rem;
@@ -625,18 +647,23 @@ header {
   font-weight: 700;
   line-height: 1.5;
 }
+.hero-inner h2,
+  .hero-inner strong {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 main {
   min-height: 450vh;
 }
 /* Subhero */
-.subhero ul {
+.subhero-list {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   overflow: hidden;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
-.subhero ul button {
+.subhero-item {
   display: flex;
   width: 100%;
   align-items: center;
@@ -651,15 +678,24 @@ main {
 }
 @media (min-width: 1024px) {
 
-  .subhero ul button {
+  .subhero-item {
     justify-content: flex-start;
   }
 }
-.subhero ul button.active {
+.subhero-item.showcase {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 45 66 / var(--tw-bg-opacity));
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.subhero-item.active {
   --tw-bg-opacity: 1;
   background-color: rgb(43 45 66 / var(--tw-bg-opacity));
 }
-.subhero ul button img {
+.subhero-item img {
   height: 3rem;
   width: 3rem;
   border-radius: 9999px;
@@ -670,12 +706,12 @@ main {
 }
 @media (min-width: 768px) {
 
-  .subhero ul button img {
+  .subhero-item img {
     height: 3.5rem;
     width: 3.5rem;
   }
 }
-.subhero ul button span {
+.subhero-item span {
   display: none;
   text-transform: capitalize;
   letter-spacing: 0.05em;
@@ -684,9 +720,16 @@ main {
 }
 @media (min-width: 1024px) {
 
-  .subhero ul button span {
+  .subhero-item span {
     display: inline-block;
   }
+}
+.category-check-listing-btn {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.flex {
+  display: flex;
 }
 .h-6 {
   height: 1.5rem;
@@ -694,7 +737,13 @@ main {
 .w-6 {
   width: 1.5rem;
 }
-* {
-  box-sizing: border-box;
-  font: 400 14px "Poppins";
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }

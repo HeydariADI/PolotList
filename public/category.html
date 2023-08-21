@@ -25,12 +25,12 @@
           <li><a href="./listing.html" class="navbar-item">Listing</a></li>
           <li><a href="./contact-us" class="navbar-item">contact us</a></li>
           <li>
-            <button>
+            <button class="navbar-add-listing-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                stroke-width="2"
                 stroke="currentColor"
                 class="w-6 h-6"
               >
@@ -58,38 +58,69 @@
       </section>
 
       <section class="subhero container">
-        <ul>
-          <li>
-            <button>
+        <ul class="subhero-list">
+          <li class="subhero-list-item">
+            <button class="subhero-item">
               <img src="/assets/images/search-icon-01.png" alt="apartments" />
               <span>Apartments</span>
             </button>
           </li>
           <li>
-            <button>
+            <button class="subhero-item">
               <img src="/assets/images/search-icon-02.png" alt="food & life" />
               <span>food & lifes</span>
             </button>
           </li>
           <li>
-            <button>
+            <button class="subhero-item">
               <img src="/assets/images/search-icon-03.png" alt="cars" />
               <span>cars</span>
             </button>
           </li>
           <li>
-            <button class="active">
+            <button class="subhero-item active">
               <img src="/assets/images/search-icon-04.png" alt="shopping" />
               <span>shopping</span>
             </button>
           </li>
           <li>
-            <button>
+            <button class="subhero-item">
               <img src="/assets/images/search-icon-05.png" alt="traveling" />
               <span>traveling</span>
             </button>
           </li>
         </ul>
+      </section>
+
+      <section class="subhero-contents container">
+        <section
+          class="subhero-content-header flex justify-between items-center py-20"
+        >
+          <div class="subhero-item showcase">
+            <img src="/assets/images/search-icon-05.png" alt="traveling" />
+            <span>traveling</span>
+          </div>
+
+          <button class="category-check-listing-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+            Check Our Listings
+          </button>
+        </section>
+
+        <hr />
       </section>
     </main>
   </body>

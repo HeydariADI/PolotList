@@ -1,16 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-  box-sizing: border-box;
-  font: 400 14px "Poppins";
-}
+
 @layer components {
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font: 400 15px "Poppins";
+    color: #333333;
   }
   .container {
     @apply mx-auto p-2 sm:p-0;
@@ -20,10 +18,10 @@
     @apply fixed top-0 w-full border-b-gray-400 border-b;
   }
   .navbar {
-    @apply flex justify-between items-center py-4  uppercase font-normal tracking-wide;
+    @apply flex justify-between items-center py-4 uppercase font-normal tracking-wide;
   }
 
-  .navbar.dark {
+  .navbar.dark a {
     @apply text-white;
   }
 
@@ -35,17 +33,33 @@
     @apply hover:text-gray-400 transition-colors duration-150;
   }
 
-  .navbar-menu button {
-    @apply flex items-center justify-center gap-2 bg-slate-400 hover:bg-slate-400 transition-colors duration-150 hover:text-white px-5 py-3 rounded-lg;
+  .category-check-listing-btn,
+  .navbar-add-listing-btn {
+    @apply flex items-center justify-center gap-2 tracking-widest bg-slate-400 hover:bg-slate-400 transition-colors duration-150 hover:text-white px-5 py-3 rounded-lg;
   }
-  .navbar.dark button {
+
+  .category-check-listing-btn svg,
+  .navbar-add-listing-btn svg {
+    @apply p-1 rounded-full bg-white;
+  }
+  .category-check-listing-btn svg path,
+  .navbar-add-listing-btn svg path {
+    @apply text-primary-normal;
+  }
+  .navbar.dark .navbar-add-listing-btn {
     @apply text-gray-800 bg-white;
+  }
+  .navbar.dark .navbar-add-listing-btn svg {
+    @apply bg-primary-normal;
+  }
+  .navbar.dark .navbar-add-listing-btn path {
+    @apply text-white;
   }
   .hero {
     @apply bg-[url('/assets/images/heading-bg.jpg')] bg-cover object-fill;
   }
   .hero .hero-inner {
-    @apply min-h-[70vh] flex flex-col justify-center gap-4 text-white;
+    @apply min-h-[70vh] flex flex-col justify-center gap-4;
   }
   .hero-inner strong {
     @apply text-sm font-medium;
@@ -53,28 +67,40 @@
   .hero-inner h2 {
     @apply text-4xl font-bold leading-normal;
   }
+  .hero-inner h2,
+  .hero-inner strong {
+    @apply text-white;
+  }
 
   main {
     @apply min-h-[450vh];
   }
 
   /* Subhero */
-  .subhero ul {
+  .subhero-list {
     @apply rounded-b-lg overflow-hidden grid grid-cols-5;
   }
-  .subhero ul button {
+  .subhero-item {
     @apply bg-primary-normal flex items-center justify-center lg:justify-start gap-5 w-full px-5 py-9;
   }
 
-  .subhero ul button.active {
+  .subhero-item.showcase {
+    @apply w-fit rounded-lg px-10 bg-primary-focus;
+  }
+
+  .subhero-item.active {
     @apply bg-primary-focus;
   }
 
-  .subhero ul button img {
+  .subhero-item img {
     @apply bg-white w-12 h-12 md:h-14 md:w-14 rounded-full object-scale-down;
   }
 
-  .subhero ul button span {
+  .subhero-item span {
     @apply text-white tracking-wider capitalize hidden lg:inline-block;
+  }
+
+  .category-check-listing-btn {
+    @apply text-white;
   }
 }
