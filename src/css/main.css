@@ -164,3 +164,8 @@
     @apply hover:text-slate-400 hover:underline underline-offset-4;
   }
 }
+@layer base {
+  li[class="nav__list"] {
+    @apply mx-9;
+  }
+}

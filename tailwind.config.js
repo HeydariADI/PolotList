@@ -7,6 +7,7 @@ module.exports = {
         primary: {
           normal: "#8d99af",
           focus: "#2b2d42",
+          "primary-bg": "#212529",
         },
         normal: "#333333",
       },

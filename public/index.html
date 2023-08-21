@@ -13,5 +13,54 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <header
+      class="header bg-[url('/assets/images/banner-bg.jpg')] h-screen bg-no-repeat bg-cover"
+    >
+      <nav class="nav sticky top-0 border-b-2 border-white py-4">
+        <div class="nav__container flex flex-row justify-around items-center">
+          <a href="./index.html" class="nav__logo mr-20">
+            <img src="/assets/images/white-logo.png" alt="" />
+          </a>
+          <ul
+            class="nav__menu flex flex-row justify-around items-center uppercase font-sans font-medium text-md text-white"
+          >
+            <li class="nav__list text-primary-normal">
+              <a href="./index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+              <a href="./category.html" class="nav__link">Category</a>
+            </li>
+            <li class="nav__list">
+              <a href="./listing.html" class="nav__link">Listing</a>
+            </li>
+            <li class="nav__list">
+              <a href="./contact-us.html" class="nav__link">Contact Us</a>
+            </li>
+            <li
+              class="bg-white px-4 py-2 rounded-md text-black ml-10 hover:bg-slate-400 transition-all duration-100 hover:text-white"
+            >
+              <a href="#" class="flex flex-row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <h1 class="font-light">Add Your Listing</h1>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
