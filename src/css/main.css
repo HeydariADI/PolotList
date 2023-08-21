@@ -103,4 +103,22 @@
   .category-check-listing-btn {
     @apply text-white;
   }
+
+  .description-about {
+    @apply grid grid-cols-5 py-20;
+  }
+
+  .description-inner {
+    @apply col-span-4 grid gap-8;
+  }
+  .description-inner-heading {
+    @apply font-semibold text-2xl;
+  }
+
+  .description-inner p {
+    @apply leading-relaxed tracking-wide;
+  }
+  .total-listings p {
+    @apply leading-relaxed tracking-wide font-medium text-slate-400;
+  }
 }
