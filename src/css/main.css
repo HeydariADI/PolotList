@@ -188,11 +188,23 @@
   option{
     @apply px-10 py-12;
   }
-  .equipment p{
-    @apply mt-4 text-white;
+  .equipment .p{
+    @apply mt-4 text-white
   }
   .equipment-icons{
-    @apply w-16 h-16 bg-white rounded-full flex items-center justify-center p-3;
+    @apply w-16 h-16 bg-white rounded-full flex items-center justify-center p-3
+  }
+  .equipment-category{
+    @apply bg-primary-normal flex flex-row items-center justify-evenly py-4 px-10 cursor-pointer h-32;
+  }
+  .equipment-category-p,.category-info__p{
+    @apply text-white ml-2 font-thin; 
+  }
+  .equipment.menu-active{
+    @apply bg-primary-focus;
+  }
+  .category-info__title{
+    @apply text-white;
   }
   /* end of top box of home */
 }
