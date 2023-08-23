@@ -132,74 +132,98 @@
               <div class="equipment-icons">
                 <img src="/assets/images/search-icon-01.png" alt="" />
               </div>
-              <p>Apartments</p>
+              <p class="p">Apartments</p>
             </span>
             <span class="equipment">
               <div class="equipment-icons">
                 <img src="/assets/images/search-icon-02.png" alt="" />
               </div>
-              <p>Food&Life</p>
+              <p class="p">Food&Life</p>
             </span>
             <span class="equipment">
               <div class="equipment-icons">
                 <img src="/assets/images/search-icon-03.png" alt="" />
               </div>
-              <p>charset</p>
+              <p class="p">charset</p>
             </span>
             <span class="equipment">
               <div class="equipment-icons">
                 <img src="/assets/images/search-icon-04.png" alt="" />
               </div>
-              <p>Shopping</p>
+              <p class="p">Shopping</p>
             </span>
             <span class="equipment">
               <div class="equipment-icons">
                 <img src="/assets/images/search-icon-05.png" alt="" />
               </div>
-              <p>Traveling</p>
+              <p class="p">Traveling</p>
             </span>
           </div>
         </div>
       </div>
     </div>
-    <div class="main my-20 text-center h-[80vh]">
+    <div class="main my-20 text-center">
       <h1 class="title font-bold text-4xl">Popular Categories</h1>
-      <h3 class="mt-5 text-primary-primary-bg">check them out </h3>
-      <div class="categories-info flex flex-row bg-primary-focus w-4/5 mx-auto h-full ">
-        <div class="categories-info__left flex flex-col h-full flex-1">
-          <span  class="equipment">
+      <h3 class="mt-5 text-primary-primary-bg uppercase text-primary-normal">check them out </h3>
+      <div class="categories-info flex flex-row  bg-primary-focus w-4/5 mx-auto rounded-md overflow-hidden mt-10 ">
+        <div class="categories-menu__left flex flex-col w-1/4">
+          <span class="equipment-category menu-active" id="Apartments">
             <div class="equipment-icons">
               <img src="/assets/images/search-icon-01.png" alt="" />
             </div>
-            <p>Apartments</p>
+            <p class="equipment-category-p">Apartments</p>
           </span>
-          <span class="equipment">
+          <span class="equipment-category" id="Food">
             <div class="equipment-icons">
               <img src="/assets/images/search-icon-02.png" alt="" />
             </div>
-            <p>Food&Life</p>
+            <p class="equipment-category-p">Food&Life</p>
           </span>
-          <span class="equipment">
+          <span class="equipment-category" id="Charset">
             <div class="equipment-icons">
               <img src="/assets/images/search-icon-03.png" alt="" />
             </div>
-            <p>charset</p>
+            <p class="equipment-category-p">charset</p>
           </span>
-          <span class="equipment">
+          <span class="equipment-category" id="Shopping">
             <div class="equipment-icons">
               <img src="/assets/images/search-icon-04.png" alt="" />
             </div>
-            <p>Shopping</p>
+            <p class="equipment-category-p">Shopping</p>
           </span>
-          <span class="equipment">
+          <span class="equipment-category" id="Traveling">
             <div class="equipment-icons">
               <img src="/assets/images/search-icon-05.png" alt="" />
             </div>
-            <p>Traveling</p>
+            <p class="equipment-category-p">Traveling</p>
           </span>
         </div>
-        <div class="categories-info__right"></div>
+        <div class="category-info__main text-white font-semibold text-xl my-28  text-left px-16 mx-auto">
+          <h1 class="category-info__title text-xl">
+            One Of The Most Trending Stuffs Right Now!
+          </h1>
+          <p class="category-info__p text-base font-normal mt-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex eos voluptatum a odio aspernatur ratione unde quae deleniti illum illo! Officiis, rem amet. Quo similique commodi molestias voluptatum voluptatibus doloremque.
+          </p>
+          <button class="category-btn bg-primary-normal rounded-full flex flex-row items-center py-4 px-6 mt-5">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+
+            Discover More</button>
+        </div>
+        <div class="categories-info__right flex items-center w-2/3 py-14 px-8 ">
+          <img src="/assets/images/tabs-image-01.jpg" id="Apartments-img" class="image-category image-active" alt="" data-img="Apartments">
+          <img src="/assets/images/tabs-image-02.jpg" id="Food-img" class="image-category " alt="" data-img="Food">
+          <img src="/assets/images/tabs-image-03.jpg" id="Charset-img" class="image-category" alt="" data-img="Charset">
+          <img src="/assets/images/tabs-image-04.jpg" id="Shopping-img" class="image-category" alt="" data-img="Shopping">
+          <img src="/assets/images/tabs-image-05.jpg" id="Traveling-img" class="image-category " alt="" data-img="Traveling">
+        </div>
       </div>
     </div>
+    <script src="/src/js/home.js"></script>
   </body>
 </html>

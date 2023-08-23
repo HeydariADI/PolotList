@@ -11,7 +11,16 @@ module.exports = {
         },
         normal: "#333333",
       },
+      keyframes: {
+        Toright: {
+          '0%': { transform:'translateX(-50%)',opacity:'0'},
+          '100%': { transform:'translateX(0)',opacity:'1'}
+      }
     },
+    animation:{
+      'ToRight':'Toright 1s linear'
+    }
   },
-  plugins: [],
+},
+plugins: [],
 };
