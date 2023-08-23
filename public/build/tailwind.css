@@ -1022,21 +1022,17 @@ option {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.bg-primary-focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 45 66 / var(--tw-bg-opacity));
+}
 .bg-primary-normal {
   --tw-bg-opacity: 1;
   background-color: rgb(141 153 175 / var(--tw-bg-opacity));
 }
-.bg-primary-primary_bg {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 37 41 / var(--tw-bg-opacity));
-}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-primary-focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(43 45 66 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\/assets\/images\/banner-bg\.jpg\'\)\] {
   background-image: url('/assets/images/banner-bg.jpg');
