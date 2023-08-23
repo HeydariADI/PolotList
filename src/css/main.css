@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base{
   * {
     padding: 0;
     margin: 0;
@@ -10,10 +10,11 @@
     font: 400 15px "Poppins";
     color: #333333;
   }
-  .container {
-    @apply mx-auto p-2 sm:p-0;
+  li[class="nav__list"] {
+    @apply mx-9;
   }
-
+}
+@layer components {
   header {
     @apply fixed top-0 w-full border-b-gray-400 border-b transition-colors duration-300;
   }
@@ -26,6 +27,9 @@
   }
 
   .navbar.dark a {
+    @apply text-white;
+  }
+  .nav__link {
     @apply text-white;
   }
 
@@ -167,9 +171,41 @@
   footer .footer-contact-us a {
     @apply hover:text-slate-400 hover:underline underline-offset-4;
   }
-}
-@layer base {
-  li[class="nav__list"] {
-    @apply mx-9;
+
+  /* top box of home */
+  .image-icons span p{
+    @apply text-white;
   }
+  .image-icons image{
+    @apply w-14 h-14;
+  }
+  .form{
+    @apply my-10 bg-white rounded-md overflow-hidden grid grid-cols-4;
+  }
+  .select-box{
+    @apply px-5 py-7 mx-2 bg-white ;
+  }
+  option{
+    @apply px-10 py-12;
+  }
+  .equipment .p{
+    @apply mt-4 text-white
+  }
+  .equipment-icons{
+    @apply w-16 h-16 bg-white rounded-full flex items-center justify-center p-3
+  }
+  .equipment-category{
+    @apply bg-primary-normal flex flex-row items-center justify-evenly py-4 px-10 cursor-pointer h-32;
+  }
+  .equipment-category-p,.category-info__p{
+    @apply text-white ml-2 font-thin; 
+  }
+  .equipment.menu-active{
+    @apply bg-primary-focus;
+  }
+  .category-info__title{
+    @apply text-white;
+  }
+  /* end of top box of home */
 }
+

@@ -15,7 +15,7 @@
   </head>
   <body>
     <header
-      class="header bg-[url('/assets/images/banner-bg.jpg')] h-screen bg-no-repeat bg-cover"
+      class="header bg-[url('/assets/images/banner-bg.jpg')] bg-no-repeat bg-cover"
     >
       <nav class="nav sticky top-0 border-b-2 border-white py-4">
         <div class="nav__container flex flex-row justify-around items-center">
@@ -25,8 +25,10 @@
           <ul
             class="nav__menu flex flex-row justify-around items-center uppercase font-sans font-medium text-md text-white"
           >
-            <li class="nav__list text-primary-normal">
-              <a href="./index.html" class="nav__link">Home</a>
+            <li class="nav__list">
+              <a href="./index.html" class="nav__link text-primary-normal"
+                >Home</a
+              >
             </li>
             <li class="nav__list">
               <a href="./category.html" class="nav__link">Category</a>
@@ -62,5 +64,159 @@
         </div>
       </nav>
     </header>
+    <div
+      class="top-bar h-[90vh] bg-[url('/assets/images/banner-bg.jpg')] bg-no-repeat bg-cover mt-24 flex items-center justify-center"
+    >
+      <div
+        class="top-bar__container w-4/5 mx-auto my-auto text-white flex justify-center flex-col items-center"
+      >
+        <h3 class="text-white font-medium text-lg uppercase">
+          over 36,000+ active listings
+        </h3>
+        <h1 class="font-bold text-6xl text-white my-4 font-poppins">
+          Find Nearby Places & Things
+        </h1>
+        <div class="selection w-full">
+          <form class="form">
+            <select
+              name="select-box bg-white"
+              class="select-box"
+              id="select-box"
+            >
+              <option value="All Areas" class="option-box">All Areas</option>
+              <option value="new villages" class="option-box">
+                new villages
+              </option>
+              <option value="old town" class="option-box">old town</option>
+              <option value="Modern City" class="option-box">
+                Modern City
+              </option>
+            </select>
+            <input
+              type="text"
+              placeholder="Enter a location "
+              class="h-full px-4 focus:outline-none"
+            />
+            <select name="select-range" id="select-range" class="select-box">
+              <option value="Price Range">Price Range</option>
+              <option value="Price Range">100$-250$</option>
+              <option value="Price Range">250$-500$</option>
+              <option value="Price Range">500$-1,000$</option>
+              <option value="Price Range">1,000$ or Modern</option>
+            </select>
+            <button
+              type="submit"
+              class="px-4 bg-primary-normal cursor-pointer flex items-center justify-center gap-2"
+            >
+              <div class="w-10 h-10 py-2 rounded-full bg-white flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </div>
+              Search Now
+            </button>
+          </form>
+          <div class="icons-container flex flex-row justify-around mx-auto w-3/5 mt-4">
+            <span  class="equipment">
+              <div class="equipment-icons">
+                <img src="/assets/images/search-icon-01.png" alt="" />
+              </div>
+              <p class="p">Apartments</p>
+            </span>
+            <span class="equipment">
+              <div class="equipment-icons">
+                <img src="/assets/images/search-icon-02.png" alt="" />
+              </div>
+              <p class="p">Food&Life</p>
+            </span>
+            <span class="equipment">
+              <div class="equipment-icons">
+                <img src="/assets/images/search-icon-03.png" alt="" />
+              </div>
+              <p class="p">charset</p>
+            </span>
+            <span class="equipment">
+              <div class="equipment-icons">
+                <img src="/assets/images/search-icon-04.png" alt="" />
+              </div>
+              <p class="p">Shopping</p>
+            </span>
+            <span class="equipment">
+              <div class="equipment-icons">
+                <img src="/assets/images/search-icon-05.png" alt="" />
+              </div>
+              <p class="p">Traveling</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main my-20 text-center">
+      <h1 class="title font-bold text-4xl">Popular Categories</h1>
+      <h3 class="mt-5 text-primary-primary-bg uppercase text-primary-normal">check them out </h3>
+      <div class="categories-info flex flex-row bg-primary-focus w-4/5 mx-auto h-full rounded-md overflow-hidden mt-10">
+        <div class="categories-menu__left flex flex-col h-full flex-1 w-1/4">
+          <span  class="equipment equipment-category menu-active">
+            <div class="equipment-icons">
+              <img src="/assets/images/search-icon-01.png" alt="" />
+            </div>
+            <p class="equipment-category-p">Apartments</p>
+          </span>
+          <span class="equipment equipment-category">
+            <div class="equipment-icons">
+              <img src="/assets/images/search-icon-02.png" alt="" />
+            </div>
+            <p class="equipment-category-p">Food&Life</p>
+          </span>
+          <span class="equipment equipment-category">
+            <div class="equipment-icons">
+              <img src="/assets/images/search-icon-03.png" alt="" />
+            </div>
+            <p class="equipment-category-p">charset</p>
+          </span>
+          <span class="equipment equipment-category">
+            <div class="equipment-icons">
+              <img src="/assets/images/search-icon-04.png" alt="" />
+            </div>
+            <p class="equipment-category-p">Shopping</p>
+          </span>
+          <span class="equipment equipment-category">
+            <div class="equipment-icons">
+              <img src="/assets/images/search-icon-05.png" alt="" />
+            </div>
+            <p class="equipment-category-p">Traveling</p>
+          </span>
+        </div>
+        <div class="category-info__main text-white font-semibold text-xl my-20 w-96">
+          <h1 class="category-info__title">
+            One Of The Most Trending Stuffs Right Now!
+          </h1>
+          <p class="category-info__p text-xl font-semibold">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex eos voluptatum a odio aspernatur ratione unde quae deleniti illum illo! Officiis, rem amet. Quo similique commodi molestias voluptatum voluptatibus doloremque.
+          </p>
+          <button>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+
+            Discover More</button>
+        </div>
+        <div class="categories-info__right w-2/3"></div>
+      </div>
+    </div>
   </body>
 </html>
