@@ -12,3 +12,8 @@ function navbarFadeIn() {
 }
 
 window.addEventListener("scroll", navbarFadeIn);
+
+
+
+
+
