@@ -23,7 +23,7 @@
     @apply border-none shadow-md bg-white;
   }
   .navbar {
-    @apply flex justify-between items-center py-4 uppercase font-normal tracking-wide;
+    @apply flex justify-between items-center py-4 uppercase font-normal ;
   }
 
   .navbar.dark a {

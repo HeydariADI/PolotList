@@ -556,7 +556,6 @@ header:not(:has(.navbar.dark)) {
   padding-bottom: 1rem;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.025em;
 }
 .navbar.dark a {
   --tw-text-opacity: 1;
