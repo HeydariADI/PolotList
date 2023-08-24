@@ -13,7 +13,7 @@ module.exports = {
       },
       keyframes: {
         Toright: {
-          '0%': { transform:'translateX(-50%)',opacity:'0'},
+          '0%': { transform:'translateX(-50px)',opacity:'0'},
           '100%': { transform:'translateX(0)',opacity:'1'}
       }
     },

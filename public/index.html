@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <header
+    <header id="header"
       class="header bg-[url('/assets/images/banner-bg.jpg')] bg-no-repeat bg-cover"
     >
       <nav class="nav sticky top-0 border-b-2 border-white py-4">
@@ -108,7 +108,9 @@
               type="submit"
               class="px-4 bg-primary-normal cursor-pointer flex items-center justify-center gap-2"
             >
-              <div class="w-10 h-10 py-2 rounded-full bg-white flex items-center justify-center">
+              <div
+                class="w-10 h-10 py-2 rounded-full bg-white flex items-center justify-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -127,8 +129,10 @@
               Search Now
             </button>
           </form>
-          <div class="icons-container flex flex-row justify-around mx-auto w-3/5 mt-4">
-            <span  class="equipment">
+          <div
+            class="icons-container flex flex-row justify-around mx-auto w-3/5 mt-4"
+          >
+            <span class="equipment">
               <div class="equipment-icons">
                 <img src="/assets/images/search-icon-01.png" alt="" />
               </div>
@@ -164,8 +168,10 @@
     </div>
     <div class="main my-20 text-center">
       <h1 class="title font-bold text-4xl">Popular Categories</h1>
-      <h3 class="mt-5 text-primary-primary-bg uppercase text-primary-normal">check them out </h3>
-      <div class="categories-info flex flex-row  bg-primary-focus w-4/5 mx-auto rounded-md overflow-hidden mt-10 ">
+      <h3 class="mt-5 text-primary-primary-bg uppercase text-primary-normal">
+        check them out
+      </h3>
+      <div class="categories-info">
         <div class="categories-menu__left flex flex-col w-1/4">
           <span class="equipment-category menu-active" id="Apartments">
             <div class="equipment-icons">
@@ -198,32 +204,275 @@
             <p class="equipment-category-p">Traveling</p>
           </span>
         </div>
-        <div class="category-info__main text-white font-semibold text-xl my-28  text-left px-16 mx-auto">
-          <h1 class="category-info__title text-xl">
-            One Of The Most Trending Stuffs Right Now!
-          </h1>
-          <p class="category-info__p text-base font-normal mt-6">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex eos voluptatum a odio aspernatur ratione unde quae deleniti illum illo! Officiis, rem amet. Quo similique commodi molestias voluptatum voluptatibus doloremque.
-          </p>
-          <button class="category-btn bg-primary-normal rounded-full flex flex-row items-center py-4 px-6 mt-5">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
+        <div
+          class="category-info__main"
+        >
+          <div class="category-info__box active-category" id="Apartments-box">
+            <div class="categories-info__box-info">
+              <h1 class="category-info__title text-xl">
+                One Of The Most Trending Stuffs Right Now!
+              </h1>
+              <p class="category-info__p text-base font-normal mt-6">
+                Plot Listing is a responsive Bootstrap 5 website template that included 4 different HTML pages. This template is provided by TemplateMo website. You can apply this layout for your static or dynamic CMS websites.
+              </p>
+              <button
+                class="category-btn bg-primary-normal rounded-full flex flex-row items-center py-4 px-6 mt-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                Discover More
+              </button>
+            </div>
+            <div class="categories-info__right">
+              <img
+                src="/assets/images/tabs-image-01.jpg"
+                id="Apartments-img"
+                class="image-category image-active"
+                alt=""
+                data-img="Apartments"
+              />
+            </div>
+          </div>
+          <div class="category-info__box" id="Food-box">
+            <div class="categories-info__box-info">
+              <h1 class="category-info__title text-xl">
+                Food and Lifestyle category is here
+              </h1>
+              <p class="category-info__p text-base font-normal mt-6">
+                You can feel free to download, edit and apply this template for
+                your website. Please tell your friends about TemplateMo website.
+              </p>
+              <button
+                class="category-btn bg-primary-normal rounded-full flex flex-row items-center py-4 px-6 mt-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                Explore More
+              </button>
+            </div>
+            <div class="categories-info__right">
+              <img
+            src="/assets/images/tabs-image-02.jpg"
+            id="Food-img"
+            class="image-category"
+            alt=""
+            data-img="Food"
+          />
+            </div>
+          </div>
+          <div class="category-info__box" id="Charset-box">
+            <div class="categories-info__box-info">
+              <h1 class="category-info__title text-xl">
+                Best car rentals for your trips!
+              </h1>
+              <p class="category-info__p text-base font-normal mt-6">
+                Did you know? You can get the best free HTML templates on Too
+                CSS blog. Visit the blog pages and explore fresh and latest
+                website templates.
+              </p>
+              <button
+                class="category-btn bg-primary-normal rounded-full flex flex-row items-center py-4 px-6 mt-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                More Listing
+              </button>
+            </div>
+            <div class="categories-info__right">
+              <img
+            src="/assets/images/tabs-image-03.jpg"
+            id="Charset-img"
+            class="image-category"
+            alt=""
+            data-img="Charset"
+          />
+            </div>
+          </div>
+          <div class="category-info__box" id="Shopping-box">
+            <div class="categories-info__box-info">
+              <h1 class="category-info__title text-xl">
+                Shopping List: Images from Unsplash
+              </h1>
+              <p class="category-info__p text-base font-normal mt-6">
+                Image credits go to Unsplash website that provides free stock
+                photos for anyone. Images used in this Plot Listing template are
+                from Unsplash.
+              </p>
+              <button
+                class="category-btn bg-primary-normal rounded-full flex flex-row items-center py-4 px-6 mt-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                Discover More
+              </button>
+            </div>
+            <div class="categories-info__right">
+              <img
+            src="/assets/images/tabs-image-04.jpg"
+            id="Shopping-img"
+            class="image-category"
+            alt=""
+            data-img="Shopping"
+          />
+            </div>
+          </div>
+          <div class="category-info__box" id="Traveling-box">
+            <div class="categories-info__box-info">
+              <h1 class="category-info__title text-xl">
+                Information and Safety Tips for Traveling
+              </h1>
+              <p class="category-info__p text-base font-normal mt-6">
+                You are allowed to use this template for your commercial
+                websites. You are NOT allowed to redistribute this template ZIP
+                file on any Free CSS collection websites.
+              </p>
+              <button
+                class="category-btn bg-primary-normal rounded-full flex flex-row items-center py-4 px-6 mt-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                Read More
+              </button>
+            </div>
+            <div class="categories-info__right">
+              <img
+            src="/assets/images/tabs-image-05.jpg"
+            id="Traveling-img"
+            class="image-category"
+            alt=""
+            data-img="Traveling"
+          />
+            </div>
+          </div>
+        </div>
 
-            Discover More</button>
-        </div>
-        <div class="categories-info__right flex items-center w-2/3 py-14 px-8 ">
-          <img src="/assets/images/tabs-image-01.jpg" id="Apartments-img" class="image-category image-active" alt="" data-img="Apartments">
-          <img src="/assets/images/tabs-image-02.jpg" id="Food-img" class="image-category " alt="" data-img="Food">
-          <img src="/assets/images/tabs-image-03.jpg" id="Charset-img" class="image-category" alt="" data-img="Charset">
-          <img src="/assets/images/tabs-image-04.jpg" id="Shopping-img" class="image-category" alt="" data-img="Shopping">
-          <img src="/assets/images/tabs-image-05.jpg" id="Traveling-img" class="image-category " alt="" data-img="Traveling">
-        </div>
       </div>
     </div>
+    <footer class="footer flex flex-col w-4/5 mx-auto">
+      <div class="grid grid-cols-3">
+        <div class="footer__logo">
+          <img src="/assets/images/black-logo.png" alt="">
+          <p class="footer-description">
+            If you consider that Plot Listing template is useful for your website, please support us a little via PayPal.
+          </p>
+        </div>
+        <div class="footer__help-link">
+          <h1 class="footer__help-link-title text-xl font-bold text-primary-normal mb-7">
+            Helpful Links
+          </h1>
+          <ul class="grid grid-cols-2 gap-4">
+            <li><a href="#header" class="footer__link">Categories</a></li>
+            <li><a href="#header" class="footer__link">Reviews</a></li>
+            <li><a href="#header" class="footer__link">Listing</a></li>
+            <li><a href="#header" class="footer__link">Contact Us</a></li>
+            <li><a href="#header" class="footer__link">About Us</a></li>
+            <li><a href="#header" class="footer__link">Awards</a></li>
+            <li><a href="#header" class="footer__link">Useful Sites</a></li>
+            <li><a href="#header" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__catact-us">
+          <h1 class="footer__contact-title text-xl font-bold text-primary-normal mb-7">Contact Us</h1>
+          <p>27th Street of New Town, Digital Villa</p>
+          <ul>
+            <li>010-020-0340</li>
+            <li>
+              090-080-0760 </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_copy-right w-full text-center text-xl font-bold text-primary ">
+        <h1 class="footer__copy-title">
+          Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+        </h1>
+        <h2>Design: TemplateMo</h2>
+      </div>
+    </footer>
     <script src="/src/js/home.js"></script>
   </body>
 </html>
