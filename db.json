@@ -1,0 +1,56 @@
+{
+    "items":[
+        {
+            "id": 1,
+            "title":"Third Page Apartment",
+            "class": "Apartment",
+            "price": 600,
+            "imageUrl":"./assets/images/listing-01.jpg"
+        },
+        {
+            "id": 2,
+            "title":"Sunshine Paradise Apartment",
+            "class": "Apartment",
+            "price": 600,
+            "imageUrl":"./assets/images/listing-02.jpg"
+        },
+        {
+            "id": 3,
+            "title":"Sunshine Villa Condo",
+            "class": "Apartment",
+            "price": 600,
+            "imageUrl":"./assets/images/listing-03.jpg"
+        },
+        {
+            "id": 4,
+            "title":"FOOD first Page",
+            "class": " Food & Life ",
+            "price": 600,
+            "imageUrl":"./assets/images/listing-04.jpg"
+        },
+        {
+            "id": 5,
+            "title":"FOOD Second Page",
+            "class": " Food & Life ",
+            "price": 600,
+            "imageUrl":"./assets/images/listing-05.jpg"
+        },
+        {
+            "id": 6,
+            "title":"Third Category Second Page",
+            "class": " cars ",
+            "price": 600,
+            "imageUrl":"./assets/images/listing-06.jpg"
+        },
+        {
+            "id": 7,
+            "title":"Third Category Second Page",
+            "class": " cars ",
+            "price": 600,
+            "imageUrl":"./assets/images/listing-06.jpg"
+        }
+
+        
+
+    ]
+}

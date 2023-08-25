@@ -1,3 +1,175 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 400 15px "Poppins";
+    color: #333333;
+  }
+  .container {
+    @apply mx-auto p-2 sm:p-0;
+  }
+
+  header {
+    @apply fixed top-0 w-full border-b-gray-400 border-b transition-colors duration-300;
+  }
+
+  header:not(:has(.navbar.dark)) {
+    @apply border-none shadow-md bg-white;
+  }
+  .navbar {
+    @apply flex justify-between items-center py-4 uppercase font-normal tracking-wide;
+  }
+
+  .navbar.dark a {
+    @apply text-white;
+  }
+
+  .navbar-menu {
+    @apply flex gap-8 items-center;
+  }
+
+  .navbar-item {
+    @apply hover:text-gray-400 transition-colors duration-150;
+  }
+
+  .category-check-listing-btn,
+  .navbar-add-listing-btn {
+    @apply flex items-center text-white justify-center gap-2 tracking-widest bg-slate-400 hover:bg-slate-400 transition-colors duration-150 hover:text-white px-5 py-3 rounded-lg;
+  }
+
+  .category-check-listing-btn svg,
+  .navbar-add-listing-btn svg {
+    @apply p-1 rounded-full bg-white;
+  }
+  .category-check-listing-btn svg path,
+  .navbar-add-listing-btn svg path {
+    @apply text-primary-normal;
+  }
+  .navbar.dark .navbar-add-listing-btn {
+    @apply text-gray-800 bg-white;
+  }
+  .navbar.dark .navbar-add-listing-btn svg {
+    @apply bg-primary-normal;
+  }
+  .navbar.dark .navbar-add-listing-btn path {
+    @apply text-white;
+  }
+  .hero {
+    @apply bg-[url('/assets/images/heading-bg.jpg')] bg-cover object-fill;
+  }
+  .hero .hero-inner {
+    @apply min-h-[70vh] flex flex-col justify-center gap-4;
+  }
+  .hero-inner strong {
+    @apply text-sm font-medium;
+  }
+  .hero-inner h2 {
+    @apply text-4xl font-bold leading-normal;
+  }
+  .hero-inner h2,
+  .hero-inner strong {
+    @apply text-white;
+  }
+
+  /* Subhero */
+  .subhero-list {
+    @apply rounded-b-lg overflow-hidden grid grid-cols-5;
+  }
+  .subhero-item {
+    @apply bg-primary-normal flex items-center justify-center lg:justify-start gap-5 w-full px-5 py-9;
+  }
+
+  .subhero-item.showcase {
+    @apply w-fit rounded-lg px-10 bg-primary-focus;
+  }
+
+  .subhero-item.active {
+    @apply bg-primary-focus;
+  }
+
+  .subhero-item img {
+    @apply bg-white w-12 h-12 md:h-14 md:w-14 rounded-full object-scale-down;
+  }
+
+  .subhero-item span {
+    @apply text-white tracking-wider capitalize hidden lg:inline-block;
+  }
+
+  .category-check-listing-btn {
+    @apply text-white;
+  }
+
+  .description-about {
+    @apply grid grid-cols-5 py-20;
+  }
+
+  .description-inner {
+    @apply col-span-4 grid gap-8;
+  }
+  .description-inner-heading,
+  .general-info-heading {
+    @apply font-semibold text-2xl;
+  }
+
+  .description-inner p {
+    @apply leading-relaxed tracking-wide;
+  }
+  .total-listings ul li p,
+  .general-info ul li p {
+    @apply leading-relaxed tracking-wide font-medium text-slate-400;
+  }
+  .general-info ul li p {
+    @apply font-normal;
+  }
+
+  .general-info {
+    @apply grid gap-8 py-20;
+  }
+
+  footer {
+    @apply container grid grid-cols-3 gap-10 py-20;
+  }
+
+  footer .footer-logo {
+    @apply flex flex-col gap-5 items-start;
+  }
+
+  footer .footer-logo .logo-description {
+    @apply leading-relaxed tracking-wide;
+  }
+
+  footer .footer-helpful-links,
+  footer .footer-contact-us {
+    @apply flex flex-col gap-5;
+  }
+
+  footer .helpful-links-heading {
+    @apply font-semibold text-xl text-slate-400;
+  }
+
+  footer .helpful-links-list {
+    @apply grid grid-cols-2 gap-2;
+  }
+  footer .contact-us-numbers {
+    @apply flex justify-between;
+  }
+
+  footer .footer-copyright {
+    @apply col-span-3 text-center;
+  }
+
+  footer .footer-helpful-links a,
+  footer .footer-contact-us a {
+    @apply hover:text-slate-400 hover:underline underline-offset-4;
+  }
+}
+@layer base {
+  li[class="nav__list"] {
+    @apply mx-9;
+  }
+}
