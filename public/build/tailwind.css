@@ -1038,12 +1038,12 @@ footer .footer-helpful-links a:hover,
   border-radius: 0.375rem;
 }
 .swiper {
-  height: -moz-fit-content;
-  height: fit-content;
+  height: -moz-max-content;
+  height: max-content;
   width: 1000px;
 }
 .swiper-pagination {
-  margin-top: 0.75rem;
+  margin-top: 4rem;
 }
 /* end of top box of home */
 .static {

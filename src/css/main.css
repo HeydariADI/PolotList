@@ -249,10 +249,10 @@
     @apply rounded-md;
   }
   .swiper{
-    @apply w-[1000px] h-fit;
+    @apply w-[1000px] h-max;
   }
   .swiper-pagination{
-    @apply mt-3
+    @apply mt-16
   }
   /* end of top box of home */
 }
