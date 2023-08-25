@@ -13,6 +13,11 @@
   li[class="nav__list"] {
     @apply mx-9;
   }
+
+  .container {
+    @apply mx-auto
+  }
+
 }
 @layer components {
   header {
