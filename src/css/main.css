@@ -23,6 +23,7 @@
   option {
     @apply px-10 py-12;
   }
+  
 }
 @layer components {
   header {
@@ -195,7 +196,9 @@
   .select-box {
     @apply px-5 py-7 mx-2 bg-white;
   }
-
+  .equipment{
+    @apply flex flex-col items-center;
+  }
   .equipment .p {
     @apply mt-4 text-white;
   }
@@ -203,14 +206,14 @@
     @apply w-16 h-16 bg-white rounded-full flex items-center justify-center p-3;
   }
   .equipment-category {
-    @apply bg-primary-normal flex flex-row items-center justify-evenly cursor-pointer px-12;
+    @apply bg-primary-normal flex flex-row items-center justify-evenly cursor-pointer px-12 ;
   }
   .equipment-category-p,
   .category-info__p {
     @apply text-white ml-2 font-thin;
   }
   .categories-menu__left > span {
-    @apply flex-1 px-6 py-4;
+    @apply flex-1 px-6 py-4 max-sm:p-0;
   }
   .equipment-category.menu-active {
     @apply bg-primary-focus;
@@ -253,6 +256,22 @@
   }
   .swiper-pagination{
     @apply mt-16
+  }
+  .listing-container{
+    @apply w-4/5 mx-auto my-56 max-sm:py-0  max-sm:mx-2;
+  }
+  .listing-container.facility {
+    @apply max-sm:mx-2
+  }
+  .form{
+    @apply max-sm:flex max-sm:flex-col
+  }
+  .icons-container{
+    @apply flex flex-row justify-around mx-auto w-3/5 mt-4;
+  }
+  .top-bar{
+    @apply h-[90vh] bg-[url('/assets/images/banner-bg.jpg')] bg-no-repeat bg-cover mt-24 flex items-center justify-center max-sm:text-sm;
+
   }
   /* end of top box of home */
 }
