@@ -1020,6 +1020,19 @@ footer .footer-helpful-links a:hover,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
+.footer-menu>li {
+  transition-duration: 300ms;
+}
+.footer-menu>li:hover {
+  --tw-text-opacity: 1;
+  color: rgb(141 153 175 / var(--tw-text-opacity));
+}
+.slide-container {
+  margin-top: 1.25rem;
+}
+.slide-container img {
+  border-radius: 0.375rem;
+}
 /* end of top box of home */
 .static {
   position: static;
@@ -1041,9 +1054,17 @@ footer .footer-helpful-links a:hover,
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.my-56 {
+  margin-top: 14rem;
+  margin-bottom: 14rem;
 }
 .my-auto {
   margin-top: auto;
@@ -1061,6 +1082,9 @@ footer .footer-helpful-links a:hover,
 .mr-20 {
   margin-right: 5rem;
 }
+.mt-14 {
+  margin-top: 3.5rem;
+}
 .mt-24 {
   margin-top: 6rem;
 }
@@ -1072,6 +1096,9 @@ footer .footer-helpful-links a:hover,
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-7 {
+  margin-top: 1.75rem;
 }
 .flex {
   display: flex;
@@ -1145,6 +1172,10 @@ footer .footer-helpful-links a:hover,
 .gap-4 {
   gap: 1rem;
 }
+.gap-x-14 {
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1175,6 +1206,13 @@ footer .footer-helpful-links a:hover,
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-3 {
+  padding: 0.75rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1182,6 +1220,10 @@ footer .footer-helpful-links a:hover,
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .py-2 {
   padding-top: 0.5rem;
@@ -1195,15 +1237,26 @@ footer .footer-helpful-links a:hover,
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.pr-3 {
+  padding-right: 0.75rem;
+}
 .text-center {
   text-align: center;
 }
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .text-6xl {
   font-size: 3.75rem;
@@ -1216,6 +1269,10 @@ footer .footer-helpful-links a:hover,
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -1233,12 +1290,19 @@ footer .footer-helpful-links a:hover,
 .font-normal {
   font-weight: 400;
 }
+.font-semibold {
+  font-weight: 600;
+}
 .uppercase {
   text-transform: uppercase;
 }
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-primary-focus {
+  --tw-text-opacity: 1;
+  color: rgb(43 45 66 / var(--tw-text-opacity));
 }
 .text-primary-normal {
   --tw-text-opacity: 1;
@@ -1255,6 +1319,10 @@ footer .footer-helpful-links a:hover,
 }
 .duration-100 {
   transition-duration: 100ms;
+}
+.hover\:bg-primary-normal:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(141 153 175 / var(--tw-bg-opacity));
 }
 .hover\:bg-slate-400:hover {
   --tw-bg-opacity: 1;

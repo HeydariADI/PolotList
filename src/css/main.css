@@ -236,6 +236,14 @@
   .active-category {
     @apply flex flex-row items-center h-full opacity-100 animate-ToRight transition-all duration-300;
   }
-
+  .footer-menu>li{
+    @apply  duration-300  hover:text-primary-normal
+  }
+  .slide-container{
+    @apply mt-5
+  }
+  .slide-container img{
+    @apply rounded-md;
+  }
   /* end of top box of home */
 }
