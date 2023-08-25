@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
   * {
     padding: 0;
     margin: 0;
@@ -15,9 +15,11 @@
   }
 
   .container {
-    @apply mx-auto
+    @apply mx-auto;
   }
-
+  option {
+    @apply px-10 py-12;
+  }
 }
 @layer components {
   header {
@@ -28,7 +30,7 @@
     @apply border-none shadow-md bg-white;
   }
   .navbar {
-    @apply flex justify-between items-center py-4 uppercase font-normal ;
+    @apply flex justify-between items-center py-4 uppercase font-normal;
   }
 
   .navbar.dark a {
@@ -178,39 +180,62 @@
   }
 
   /* top box of home */
-  .image-icons span p{
+  .image-icons span p {
     @apply text-white;
   }
-  .image-icons image{
+  .image-icons image {
     @apply w-14 h-14;
   }
-  .form{
+  .form {
     @apply my-10 bg-white rounded-md overflow-hidden grid grid-cols-4;
   }
-  .select-box{
-    @apply px-5 py-7 mx-2 bg-white ;
+  .select-box {
+    @apply px-5 py-7 mx-2 bg-white;
   }
-  option{
-    @apply px-10 py-12;
+
+  .equipment .p {
+    @apply mt-4 text-white;
   }
-  .equipment .p{
-    @apply mt-4 text-white
+  .equipment-icons {
+    @apply w-16 h-16 bg-white rounded-full flex items-center justify-center p-3;
   }
-  .equipment-icons{
-    @apply w-16 h-16 bg-white rounded-full flex items-center justify-center p-3
+  .equipment-category {
+    @apply bg-primary-normal flex flex-row items-center justify-evenly cursor-pointer px-12;
   }
-  .equipment-category{
-    @apply bg-primary-normal flex flex-row items-center justify-evenly py-4 px-10 cursor-pointer h-32;
+  .equipment-category-p,
+  .category-info__p {
+    @apply text-white ml-2 font-thin;
   }
-  .equipment-category-p,.category-info__p{
-    @apply text-white ml-2 font-thin; 
+  .categories-menu__left > span {
+    @apply flex-1 px-6 py-4;
   }
-  .equipment.menu-active{
+  .equipment-category.menu-active {
     @apply bg-primary-focus;
   }
-  .category-info__title{
-    @apply text-white;
+  .categories-info {
+    @apply h-[80vh] flex flex-row justify-around bg-primary-focus w-4/5 mx-auto rounded-md overflow-hidden mt-10;
   }
+  .category-info__title {
+    @apply text-white text-2xl font-semibold;
+  }
+  .categories-info__right {
+    @apply flex items-center w-full h-full py-14 pr-12;
+  }
+  .categories-info__box-info {
+    @apply text-white font-semibold text-xl my-28 text-left px-16 mx-auto;
+  }
+  .image-category {
+    @apply h-full w-full rounded-md ml-auto  hidden;
+  }
+  .image-category.image-active {
+    @apply block;
+  }
+  .category-info__box {
+    @apply hidden w-full;
+  }
+  .active-category {
+    @apply flex flex-row items-center h-full opacity-100 animate-ToRight transition-all duration-300;
+  }
+
   /* end of top box of home */
 }
-
