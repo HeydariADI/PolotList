@@ -13,6 +13,9 @@
   li[class="nav__list"] {
     @apply mx-9;
   }
+  header{
+    @apply fixed z-50;
+  }
 
   .container {
     @apply mx-auto;
@@ -244,6 +247,12 @@
   }
   .slide-container img{
     @apply rounded-md;
+  }
+  .swiper{
+    @apply w-[1000px] h-fit;
+  }
+  .swiper-pagination{
+    @apply mt-3
   }
   /* end of top box of home */
 }
