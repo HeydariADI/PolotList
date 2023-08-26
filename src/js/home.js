@@ -12,3 +12,8 @@ categoryMenu.addEventListener('click', (e) => {
 document.querySelectorAll('button').forEach(btn=>btn.addEventListener('click',e=>{
     e.preventDefault()
 }))
+//menu
+let menuResponsive=document.querySelector('.menu-responsive');
+menuResponsive.addEventListener('click',()=>{
+    document.querySelector('.menu').classList.toggle('hide-class')
+})

@@ -23,7 +23,7 @@
   option {
     @apply px-10 py-12;
   }
-  
+
 }
 @layer components {
   header {
@@ -267,11 +267,37 @@
     @apply max-sm:flex max-sm:flex-col
   }
   .icons-container{
-    @apply flex flex-row justify-around mx-auto w-3/5 mt-4;
+    @apply flex flex-row justify-around mx-auto w-3/5 mt-4 max-sm:w-full max-sm:mx-0;
   }
   .top-bar{
-    @apply h-[90vh] bg-[url('/assets/images/banner-bg.jpg')] bg-no-repeat bg-cover mt-24 flex items-center justify-center max-sm:text-sm;
+    @apply h-[90vh] bg-[url('/assets/images/banner-bg.jpg')] bg-no-repeat bg-cover flex items-center justify-center max-sm:text-sm;
 
   }
   /* end of top box of home */
+  /*header */
+  .header{
+    @apply bg-[url('/assets/images/banner-bg.jpg')] bg-no-repeat bg-cover max-sm:hidden;
+  }
+  .menu-responsive {
+    @apply fixed z-50 shadow-xl max-sm:top-10 max-sm:right-10 w-10 h-10 rounded-full bg-white max-sm:flex items-center justify-center cursor-pointer;
+  }
+  .active-menu{
+    @apply hidden;
+  }
+  .menu-responsive{
+    @apply
+  }
+  .menu{
+    @apply w-4/5 h-fit flex rounded-md shadow-md bg-white fixed top-10 right-6 items-center justify-center
+  }
+  .menu-list-respons>a{
+    @apply py-2
+  }
+  .hide-class{
+    @apply hidden;
+  }
+  /*header */
+  .top-menu__btn{
+    @apply px-4 bg-primary-normal cursor-pointer flex items-center justify-center gap-2 max-sm:py-3
+  }
 }
