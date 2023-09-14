@@ -1,19 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polotlist</title>
-    <link rel="stylesheet" href="./build/tailwind.css">
-      <!-- Poppins Font CDN -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listing</title>
+    <link rel="stylesheet" href="./build/tailwind.css" />
+   
+    <!-- Poppins Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+  rel="stylesheet"
+  href="/src/css/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css"
+/>
+
+  </head>
+  <body class="">
+    <!-- heading -->
+    <header class="px-10">
+      <nav class="navbar container dark">
+        <a href="./index.html" class="brand">
+          <img src="/assets/images/white-logo.png" alt="logo" />
+        </a>
+        <ul class="navbar-menu">
+          <li><a href="./index.html" class="navbar-item">Home</a></li>
+          <li><a href="./category.html" class="navbar-item">Category</a></li>
+          <li><a href="./listing.html" class="navbar-item">Listing</a></li>
+          <li><a href="./contact-us" class="navbar-item">contact us</a></li>
+          <li>
+            <button class="navbar-add-listing-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+              Add Your Listing
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+<!-- banner -->
+  <section class="hero pl-20 ">
+        <section class="hero-inner container">
+          <h6 class="text-white text-lg font-medium" >Check Out Our Listings</h6>
+          <p class="text-white text-6xl font-extrabold max-sm:text-4xl">Item listings of Different<br> Categories</p>
+        </section>
+  </section>
+<!-- main -->
+  <section class="listing-page mt-20 ">
+    <div class="container w-[82.5rem] flex justify-center gap-10  ">
+        <div class="menu-group w-[20.63rem] flex flex-col gap-8">
+          <div class=" group w-80 h-32 flex justify-center items-center bg-slate-500 gap-4 cursor-pointer rounded-lg " data-filter = 'Apartment'>
+            <span class="icon flex justify-center items-center bg-white w-16 h-16 rounded-full ">
+              <img class="w-6 h-6" src="/assets/images/search-icon-01.png" alt="">
+            </span>
+            <p class="text-gray-300 text-lg">Apartments</p>
+          </div>
+          <div class=" group w-80 h-32 flex justify-center items-center bg-slate-500 gap-4 cursor-pointer rounded-lg " data-filter = 'Food & Life'>
+            <span class="icon flex justify-center items-center bg-white w-16 h-16 rounded-full ">
+              <img class="w-6 h-6" src="/assets/images/search-icon-02.png" alt="">
+            </span>
+            <p class="text-gray-300 text-lg">Food & Life</p>
+          </div>
+          <div class=" group w-80 h-32 flex justify-center items-center bg-slate-500 gap-4 cursor-pointer rounded-lg " data-filter = 'cars '>
+            <span class="icon flex justify-center items-center bg-white w-16 h-16 rounded-full ">
+              <img class="w-6 h-6" src="/assets/images/search-icon-03.png" alt="">
+            </span>
+            <p class="text-gray-300 text-lg">cars</p>
+          </div>
+          <div class=" group w-80 h-32 flex justify-center items-center bg-slate-500 gap-4 cursor-pointer rounded-lg " data-filter = ' Traveling'>
+            <span class="icon flex justify-center items-center bg-white w-16 h-16 rounded-full ">
+              <img class="w-6 h-6" src="/assets/images/search-icon-04.png" alt="">
+            </span>
+            <p class="text-gray-300 text-lg"> Traveling</p>
+          </div>
+        
+          
+        </div>
+      
+      <div class="swiper">
+          <div class="swiper-wrapper slides flex flex-col gap-10">
+               <!-- <div class="swiper-slide w-[62rem] h-96 flex ">
+              <div class="slide-image w-[31rem] h-[23.2rem] bg-[url('/assets/images/listing-01.jpg')] flex justify-center items-center rounded-lg">
+                <button class="contact-now w-46 h-10 hidden justify-center items-center bg-white hover:bg-slate-400 rounded-lg p-6">
+                  <p>Contact Now</p>
+                  <i class="fa fa-eye"></i>
+                </button>
+              </div>
+              <div class="slide-desc w-[31rem] h-[23.2rem] bg-slate-50 flex flex-col gap-8 pl-16">
+                <a href="#"><h4 class="font-bold text-2xl mt-6">Third Page Apartment</h4></a>
+                <h6 class="text-gray-400 text-lg">by: Real Estate Agent</h6>
+                <span class="flex gap-2 mt-2">
+                  <img class="bg-gray-600 rounded-full w-8 h-8" src="/assets/images/listing-icon-01.png" alt="">
+                  <p> $600 to $950 / month included tax</p>
+                </span>
+                <span class="Details">
+                  <p class="text-gray-400">Details: <em>860 sq ft</em></p> 
+                </span>
+                <div class="flex flex-col gap-3 mt-4">
+                  <span class="info flex gap-4 ">
+                    <img src="/assets/images/listing-icon-02.png" alt=""> 3 Bathrooms
+                  </span>
+                  <span class="info flex gap-4 ">
+                    <img src="/assets/images/listing-icon-03.png" alt=""> 2 Bedrooms
+                  </span>
+                 
+                </div>
+               
+                
+  
+              </div>
+              
+  
+              </div>  -->
+            
+              
+          </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+       
+  </section> 
+
+
+
+
+
+   <script src="/src/js/script.js"></script>
+  
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="/src/js/listing.js" type="module"></script>
+   <script src="/src/js/"></script>
+  
+  
 </body>
 </html>
